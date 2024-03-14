@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .pr1 {
+            background-color: blue;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+            justify-content: center;
+        }
+        .pr1 h1 {
+            font-size: large;
+            color: aqua;
+        }
+        .pr1 p {
+            font-size: medium;
+            color: aqua;
+        }
+        .pr1 button {
+            padding: 6px;
+            background-color: aqua;
+            color: blue;
+            border: 2px solid black;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        #score {
+            background-color: whitesmoke;
+            color: blue;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid black;
+            margin-left: 5px;
+            margin-top: 2px;
+        }
+        .quiz_popover {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+        }
+        .quiz_popover:nth-child(1) {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            color: green;
+            background-color: brown;
+        }
+        .quiz_popover:nth-child(2),
+        .quiz_popover:nth-child(3) {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-color: black;
+            color: antiquewhite;
+        }
+        .quiz_popover:nth-child(2) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .quiz_popover:nth-child(3) {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <section class="pr1">
+        <h1>Quiz Game</h1>
+        <p>I am Going to ask you Some questions about me.</p>
+        <button id="qbtn">Questions</button>
+        <div id="score"></div>
+    </section>
+    <script src="project1.js"></script>
+</body>
+</html>
